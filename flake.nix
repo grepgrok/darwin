@@ -6,9 +6,6 @@
 
         darwin.url = "github:nix-darwin/nix-darwin/master";
         darwin.inputs.nixpkgs.follows = "nixpkgs";
-
-        home-manager.url = "github:nix-community/home-manager";
-        home-manager.inputs.nixpkgs.follows = "nixpkgs";
     };
 
     outputs = inputs@{ self, darwin, nixpkgs, home-manager, ... }: {
@@ -22,15 +19,6 @@
             };
             modules = [
                 ./modules/hosts/Borealis/configuration.nix
-
-                home-manager.darwinModules.home-manager
-                {
-                    home-manager = {
-                        useGlobalPkgs = true;
-                        useUserPackages = true;
-                        users.ben = ./modules/home-manager/ben/home.nix;
-                    };
-                }
             ];
         };
     };

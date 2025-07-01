@@ -172,6 +172,7 @@ linked to the original files in the nix store).
 - the functions are more typically nix-able (maybe, or a bashrc is the answer)
 - move to zsh
 - make zsh pretty
+- make nvim pretty
 - get TeX back
 - find a way to nicely "subclass" home-manager from darwin.
   - updating darwin stuff should update home-manager but should be able to update
