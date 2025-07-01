@@ -18,7 +18,7 @@
                 config.allowUnfree = true; 
             };
             modules = [
-                ./modules/hosts/Borealis/configuration.nix
+                ./hosts/Borealis/configuration.nix
             ];
         };
     };
