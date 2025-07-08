@@ -3,7 +3,10 @@
 
     environment = {
         shells = with pkgs; [ zsh bash ];
-        systemPackages = [ pkgs.coreutils ];
+        systemPackages = [
+            pkgs.coreutils
+            pkgs.mkvtoolnix
+        ];
         systemPath = [ "/usr/local/bin" ];
         pathsToLink = [ "/Applications" ]; # symlinks /run/current-system/sw
     };
