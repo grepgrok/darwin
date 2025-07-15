@@ -18,5 +18,5 @@
     ##### Technical Details #####
     # Bachwards compatibility
     system.stateVersion = 6;
-    nix.settings.experimental-features = "nix-command flakes";
+    nix.settings.experimental-features = "nix-command flakes pipe-operators";
 }
